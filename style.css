@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url(/images/eggs.jpg) no-repeat center / cover;
+  overflow: hidden;
+}
+.container h2 {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 800;
+  transition: 3s;
+  opacity: 0.9;
+}
+.container .hover-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400%;
+  width: 400%;
+  background: linear-gradient(
+    to right top,
+    rgba(255, 0, 0, 0.932),
+    rgba(0, 0, 255, 0.212),
+    rgba(0, 128, 0, 0.89)
+  );
+  z-index: 1;
+  transition: 1s;
+}
+.container:hover .hover-layer {
+  height: 100%;
+  width: 100%;
+}
